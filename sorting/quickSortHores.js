@@ -8,25 +8,32 @@ function quickSort(arr) {
 
 function quickSortHelper(arr, start, end) {
     if (start >= end) return;
-    const pivot = Math.floor((start + end) / 2);
+    
+    const pivot = genRandomNumBwGivenNum(start, end);
     swapElements(arr, start, pivot);
-    let minPoint = start + 1;
-    let maxPoint = end + 1;
-    while (minPoint < maxPoint) {
-        if (arr[minPoint] <= arr[start]) {
-            minPoint++;
-        } else {
-            maxPoint--;
-            swapElements(arr, minPoint, maxPoint);
-        }
-    }
-    swapElements(arr, start, minPoint - 1);
-    quickSortHelper(arr, start, minPoint - 2);
-    quickSortHelper(arr, minPoint, end);
+    let partitionIndex = getPartitionIndex(arr, start, end);
+    swapElements(arr, start, partitionIndex - 1);
+    quickSortHelper(arr, start, partitionIndex - 2);
+    quickSortHelper(arr, partitionIndex, end);
     return arr;
 }
 
-
+function getPartitionIndex(arr, start, end) {
+    let minPoint = start + 1;
+    let maxPoint = end;
+    while (minPoint <= maxPoint) {
+        if (arr[minPoint] <= arr[start]) {
+            minPoint++;
+        } else {
+            swapElements(arr, minPoint, maxPoint);
+            maxPoint--;
+        }
+    }
+    return minPoint;
+}
+function genRandomNumBwGivenNum(min, max) {
+    return Math.floor(Math.random() * (+max - +min)) + +min; 
+}
 
 function swapElements(arr, a, b) {
     [arr[a], arr[b]] = [arr[b], arr[a]]

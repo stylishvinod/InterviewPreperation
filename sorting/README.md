@@ -42,3 +42,9 @@ This README would normally document whatever steps are necessary to get your app
 *  array at  its correct position.
 * O(n square)
 * no arbitrary space
+### HeapSort ####
+*  assumption tree starts from index '0'
+* left child node = 2n + 1;
+* right child node = 2n + 2;
+* parent node =  n-1 / 2;
+* last non-leaf node index = n/2 - 1;
