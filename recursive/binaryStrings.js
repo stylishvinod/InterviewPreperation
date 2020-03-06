@@ -3,8 +3,9 @@
 //time complexity  O(n.2^n)
 // this is decrease and conquor technique
 //thi is BFS approach
-// create a binary string with 3 digts
+// create a binary string with 3 digts with repetetion allowed.
 // ex::  000, 001, 010, 011, 100, 101, 110, 111
+// all possible output with repettion allowed, with n digits is 2^n
 
 
 function binaryString(n) {
@@ -54,3 +55,21 @@ function binaryStringHelper(slate, n, arr) {
     binaryStringHelper(`${slate}1`, n-1, arr);
 
 }
+
+// decimalStrings
+
+function decimalString(n) {
+    let arr = [];
+    let slate = '';
+    decimalStringHelper(slate, n, arr);
+        console.log("vinod arr length", arr.length)
+       return arr;
+   }
+   
+   function decimalStringHelper(slate, n, arr) {
+       if(n===0) return arr.push(slate);
+       for(let i=0; i<10; i++) {
+       binaryStringHelper(`${slate}${i}`, n-1, arr);
+       }
+   
+   }
