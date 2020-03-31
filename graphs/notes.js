@@ -23,5 +23,60 @@ Connected components
 -> So Every Eulerian cycle degree of every vertex is even.
 -> If degree of any vertex is odd that graph can't have Eulerian cycle
 
+..> number of edges between 'n' vertices are nC2 = n(n-1)/2 = O(n^2);
 
+Edge list
+---------
+To check number of adjucent vertices for a single vertex, we need to 
+traverse all the edges it takes O(E);
+space complexity O(E+V)
+
+Adjacency list:
+--------------
+store all edges in a continous list
+so access is constant time
+object and pointer approach
+
+Adjacency Matrix:
+-----------------
+representing all vetex in matrix form
+time complexity O(n)
+space complexity O(n^2)
+It is useful for only dense graph.
+Dense graph is one E ~ V^2
+Sparse graph is one where E << V^2
+
+Adjacency Map:
+-------------
+
+
+***Before checking graph has Eaulerian cycle or path, we need to check
+if it is connect graph or not. if it is not connected there it selft
+we an declare there is no Eulerian cycle even though degress is event.
+
+
+** General Graph search::
+-------------------------
+ -> Fringe line:: that line(boundary) that connects captured and un captured
+  sets.
+
+  ->BFS(Breadth first search):
+    Explore the graph in increasing order of distance from source vertex.
+    --> Cross edge::
+    --> Back edge
+
+
+    Bipartite::
+
+
+    # BFS/DFS on undirected graphs
+https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+https://leetcode.com/problems/friend-circles/ (Same problem as above but you're given an adjacency matrix: very similar to Zombie clusters problem in practice set 1)
+https://leetcode.com/problems/graph-valid-tree/
+https://leetcode.com/problems/is-graph-bipartite/
+https://leetcode.com/problems/possible-bipartition/
+(special case: Grids)
+https://leetcode.com/problems/number-of-islands/
+https://leetcode.com/problems/max-area-of-island/
+https://leetcode.com/problems/flood-fill/
 */
