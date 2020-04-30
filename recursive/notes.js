@@ -39,7 +39,8 @@ sqare the result
 *******  Recursion always takes implicit memory(CPU) memory
 *******  If we use any memeory in our code that is explicity memory.
 
-
+--> Fibannachi series takes app O(2^n) time complexity in recursive mode.
+--> using iterative or memoization we can bring it back to O(n)
 ----------------------
 *****Combinations*****
 
@@ -57,5 +58,23 @@ C(n, k) -> subset of size 'k' can be formed from 'n'.
         Problems related to permutations or comibnations are called
         exhaustive serach probles. since it takes 2^n.n time even to
         print the valies.
+
+   *** Tower of hanoii***
+   it takes 2^n - 1 moves.
         
+
+1. Letter case permutation: https://leetcode.com/problems/letter-case-permutation/
+2. Subsets: https://leetcode.com/problems/subsets/
+3. Subsets II: https://leetcode.com/problems/subsets-ii/
+4. Permutations: https://leetcode.com/problems/permutations/
+5. Permutations II: https://leetcode.com/problems/permutations-ii/
+6. Combinations: https://leetcode.com/problems/combinations/
+7. Back tracking: https://leetcode.com/problems/combinations/
+7. Back tracking: Generate Parentheses: https://leetcode.com/problems/generate-parentheses/
+8. Palindrome Partitioning: https://leetcode.com/problems/palindrome-partitioning/
+9. N-Queens: https://leetcode.com/problems/n-queens/
+and https://leetcode.com/problems/n-queens-ii/
+10. Fibonacci/selection https://leetcode.com/problems/climbing-stairs/
+11. Regex match https://leetcode.com/problems/regular-expression-matching/
+12. Edit distance https://leetcode.com/problems/edit-distance/ (edited) 
 */

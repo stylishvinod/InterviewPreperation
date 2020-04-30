@@ -79,4 +79,45 @@ https://leetcode.com/problems/possible-bipartition/
 https://leetcode.com/problems/number-of-islands/
 https://leetcode.com/problems/max-area-of-island/
 https://leetcode.com/problems/flood-fill/
+
+Directed Graphs
+---------------
+# BFS on Directed graphs
+https://leetcode.com/problems/snakes-and-ladders/
+https://leetcode.com/problems/word-ladder/ (extra)
+# DFS on Directed graphs
+https://leetcode.com/problems/course-schedule/
+https://leetcode.com/problems/course-schedule-ii/
+https://leetcode.com/problems/critical-connections-in-a-network/
+
+
+Spanning Tree:
+--------------
+-> A tree which doesn't have cycles.
+-> should connect all nodes.
+--> should be min path.
+
+*** For N nodes to make a spanning tree there should be (N-1) edges, not 
+    more than
+
+    Different spanning tree algorithams
+    -----------------------------------
+    **Greedy Algoritham:
+    ---------------------
+    it is implemented using kruskals algoritham.
+    --> start taking small edge first and check if it is creating a loop.
+    --> then start fetching increasing order of weigths and everytime
+        check for loop and finally create a minimum spanning tree
+
+    
+    
+
+
+
+
+
+
+
+
+
 */

@@ -2,6 +2,37 @@
 // time complexity  (n.n!)
 // space complexity O(n)
 
+
+//46.  https://leetcode.com/problems/permutations/submissions/
+
+const swap = (arr, i, j) => {
+    const t = arr[i];
+    arr[i] = arr[j];
+    arr[j] = t;
+}
+const permuteHelper = (nums, i, results) => {
+    if(i === nums.length) {
+        results.push([...nums]);
+    }
+    // choose all possible elemet for ith
+    for(let j=i; j < nums.length; j++) {
+        swap(nums, i, j);
+        permuteHelper(nums, i+1, results);
+        swap(nums, i, j) // restore
+    }
+}
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+var permute = function(nums) {
+    const results = [];
+    permuteHelper(nums, 0, results);
+    return results;
+};
+
+
+//  choice II
 function binaryString(n) {
     let arr = [];
     let slate = '';
