@@ -1,5 +1,32 @@
 // 3.. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
+
+// This is sliding window approach.
+
+var lengthOfLongestSubstring = function(s) {
+  let left = 0, right = 0;
+  let set = new Set();
+  let maxSubStrLength = 0;
+  
+  while(right < s.length) {
+      if(!set.has(s[right])) {
+          set.add(s[right]);
+          maxSubStrLength = Math.max(maxSubStrLength, set.size);
+          right++
+      } else {
+          console.log("set", set);
+             set.delete(s[left]);
+          left++
+          
+      }
+  }
+  
+  return maxSubStrLength;
+  
+};
+
+
+//another approach, but above one is good
 var lengthOfLongestSubstring = function(s) {
     let map = new Map();
     let i = 0;

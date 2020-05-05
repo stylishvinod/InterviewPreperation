@@ -3,6 +3,13 @@
 -- Robin karps
 --KMP
 
+Any problem is given related to strings try to think below approach::
+----------------------------------------------------------------------
+1) sliding window.
+2) prefix tree --  for reverse related questions
+3) suffix tree  --- For any substring problems
+
+
 Baiscs of  string video :: https://www.youtube.com/watch?v=NinWEPPrkDQ
 
 
@@ -13,16 +20,17 @@ problems
 
 
 Sliding window and regular string:
-https://leetcode.com/problems/reverse-string/
-https://leetcode.com/problems/reverse-linked-list/
-https://leetcode.com/problems/valid-palindrome/
-https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/
-https://leetcode.com/problems/count-binary-substrings/
+https://leetcode.com/problems/reverse-string/   --- done
+https://leetcode.com/problems/reverse-linked-list/  -- done
+https://leetcode.com/problems/valid-palindrome/  -- done
+https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/ -- done
+https://leetcode.com/problems/count-binary-substrings/ -- done
 https://leetcode.com/problems/repeated-substring-pattern/
-https://leetcode.com/problems/implement-strstr/
-https://leetcode.com/problems/longest-substring-without-repeating-characters/
-https://leetcode.com/problems/minimum-window-substring/
-https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/implement-strstr/  -- done
+https://leetcode.com/problems/longest-substring-without-repeating-characters/ -- done
+https://leetcode.com/problems/minimum-window-substring/  --  done
+https://leetcode.com/problems/sliding-window-maximum/ -- done
+https://leetcode.com/problems/longest-palindromic-substring/  -- done
 https://leetcode.com/problems/find-all-anagrams-in-a-string/
 Prefix Trie:
 https://leetcode.com/problems/implement-trie-prefix-tree/
