@@ -16,3 +16,17 @@ var maxDepth = function(root) {
   }
   return level;
 };
+
+
+// iterative
+
+var maxDepth = function(root) {
+    if (root == null) return 0
+    
+    let i = 0
+    for (let node of root.children) {
+        i = Math.max(i, maxDepth(node))
+    }
+    
+    return i + 1
+}

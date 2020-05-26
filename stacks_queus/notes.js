@@ -4,7 +4,7 @@
 
 # Stack
 ## Get min
-https://leetcode.com/problems/min-stack/
+https://leetcode.com/problems/min-stack/  -- done
 ## Validate parentheses
 https://leetcode.com/problems/valid-parentheses/
 https://leetcode.com/problems/valid-parenthesis-string/
@@ -19,29 +19,20 @@ https://leetcode.com/problems/simplify-path/
 ## Visible sunset
 https://leetcode.com/problems/max-increase-to-keep-city-skyline/
 https://leetcode.com/problems/the-skyline-problem/
-# Circular Queue
-https://leetcode.com/problems/design-circular-queue/
-- Change above problem without constraints
-# Queue using Stack
-https://leetcode.com/problems/implement-queue-using-stacks/
-# Stack using Queue
-https://leetcode.com/problems/implement-stack-using-queues/
-# Max Key API
-# LRU Cache
-https://leetcode.com/problems/lru-cache/
+
 
 Queus::
 
 # Circular Queue
-https://leetcode.com/problems/design-circular-queue/
+https://leetcode.com/problems/design-circular-queue/  -- done
 - Change above problem without constraints
 # Queue using Stack
-https://leetcode.com/problems/implement-queue-using-stacks/
+https://leetcode.com/problems/implement-queue-using-stacks/ -- done
 # Stack using Queue
-https://leetcode.com/problems/implement-stack-using-queues/
+https://leetcode.com/problems/implement-stack-using-queues/ -- done
 # Max Key API
 # LRU Cache
-https://leetcode.com/problems/lru-cache/
+https://leetcode.com/problems/lru-cache/  -- done
 # LFU
 https://leetcode.com/problems/lfu-cache/
 

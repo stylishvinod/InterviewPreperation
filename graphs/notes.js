@@ -25,6 +25,20 @@ Connected components
 
 ..> number of edges between 'n' vertices are nC2 = n(n-1)/2 = O(n^2);
 
+Eulerian Path:
+-------------
+    -> should cover every edge of graph only once but start and end points are 
+        different
+    -> condition for Eulerian path only 2 vertices has odd degree and other are
+        even. Those 2 vertices having odd degree are start andd end vertex.
+
+Types of representation of Graph::
+----------------------------------
+    1) Edge List
+    2) Adjacency list
+    3) Adjacency matrix
+    4) Adjacency Map
+
 Edge list
 ---------
 To check number of adjucent vertices for a single vertex, we need to 
@@ -70,15 +84,15 @@ we an declare there is no Eulerian cycle even though degress is event.
 
 
     # BFS/DFS on undirected graphs
-https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
-https://leetcode.com/problems/friend-circles/ (Same problem as above but you're given an adjacency matrix: very similar to Zombie clusters problem in practice set 1)
-https://leetcode.com/problems/graph-valid-tree/
-https://leetcode.com/problems/is-graph-bipartite/
-https://leetcode.com/problems/possible-bipartition/
+323 : https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/  -- done
+547 : https://leetcode.com/problems/friend-circles/ -- done(Same problem as above but you're given an adjacency matrix: very similar to Zombie clusters problem in practice set 1)
+261: https://leetcode.com/problems/graph-valid-tree/ --done
+785: https://leetcode.com/problems/is-graph-bipartite/ -- done
+886: https://leetcode.com/problems/possible-bipartition/ -- done
 (special case: Grids)
-https://leetcode.com/problems/number-of-islands/
-https://leetcode.com/problems/max-area-of-island/
-https://leetcode.com/problems/flood-fill/
+200: https://leetcode.com/problems/number-of-islands/ -- done
+695: https://leetcode.com/problems/max-area-of-island/ -- done
+733: https://leetcode.com/problems/flood-fill/  -- done
 
 Directed Graphs
 ---------------
@@ -90,12 +104,35 @@ https://leetcode.com/problems/course-schedule/
 https://leetcode.com/problems/course-schedule-ii/
 https://leetcode.com/problems/critical-connections-in-a-network/
 
+1135
+787
+743
+
+Advanced Graph:
+------------
+https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+1) Quick find - O(n^2) -- here every componetid will be changed to the other cmpID
+    --> in this approach find is quick but union takes time
+2) Quick union- O(n^2) -- here we change only root node cmpID
+    --> in this approach find takes time, but union is quick
+3) Weighted quick union by size - O(n log(n))    -- in above case tree may become skew, so to make
+    that height to log(n)  when changing the parent, we need to change the parent of
+    small tree parent to assign to large tree, so heigh will be equal to large tree.
+4) Path compression - it is updating the parent node in all the children during 
+    the searh in a path
+
+https://leetcode.com/problems/redundant-connection/  -- done
+https://leetcode.com/problems/regions-cut-by-slashes/
+https://leetcode.com/problems/evaluate-division/
+https://leetcode.com/problems/connecting-cities-with-minimum-cost/  -- done
+https://leetcode.com/problems/cheapest-flights-within-k-stops/ -- done
+https://leetcode.com/problems/network-delay-time/
 
 Spanning Tree:
 --------------
 -> A tree which doesn't have cycles.
 -> should connect all nodes.
---> should be min path.
+--> should be min path/ cost
 
 *** For N nodes to make a spanning tree there should be (N-1) edges, not 
     more than
@@ -105,12 +142,43 @@ Spanning Tree:
     **Greedy Algoritham:
     ---------------------
     it is implemented using kruskals algoritham.
+    -->sort all edge weights in increasing order
     --> start taking small edge first and check if it is creating a loop.
     --> then start fetching increasing order of weigths and everytime
         check for loop and finally create a minimum spanning tree
+    --> Time complexity O(n log(n))
+    --> We can use same find-unify code for this algorithm
+    --> This approach can't form a growing structure like BFS or DFS. we take some
+        random edges and connecting them finally a connected graph
+    --> ex: 1135(leet code) 
+    ** 2nd APproach - Prim's algorithm
+    ----------------------------------
+    -> start from any vertex.
+    -> In each step, look for all edges crossing from LHS to RHS
+        LHS:: means nodes that are already connected to the un connected nodes (RHS)
+    --> O(n log(n)) space complexity O(m) m = edges
+    
 
+    Dijkstra's Algoritham:
+    ----------------------
+    It is similar to prim's algoritham.. but..
     
-    
+    Bellman-Ford Algorthim:
+    ----------------------
+    It is enhancement to Dijkstra's algorithm, where Dijkstra's algorthim only
+    able to find the min path between source and destination. It can't handle
+    if we want to find the destination within minimum hops(edges).
+    Bellmanford can solve that issue(DP).
+
+    Note:
+    ----
+    1)If we want to compute shortest path from src to des without hops we use
+    only Dijkstra's algorithm. Because time complexity of
+    Dijkstra's is O(nlog(n)) where as Bellmanford is O(n^2).
+    2) Also Bellmanford algorithm works well on negative weights, but 
+        Dijkstra's won't work.
+
+
 
 
 

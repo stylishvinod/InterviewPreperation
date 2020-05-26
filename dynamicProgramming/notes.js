@@ -33,7 +33,7 @@
         Directed Asyclick graph)
 
 
-        https://leetcode.com/problems/fibonacci-number/
+        https://leetcode.com/problems/fibonacci-number/ --- done
         https://leetcode.com/problems/climbing-stairs/
 https://leetcode.com/problems/subsets/
 https://leetcode.com/problems/subsets-ii/
@@ -47,4 +47,24 @@ https://leetcode.com/problems/word-break/
 https://leetcode.com/problems/word-break-ii/
 https://leetcode.com/problems/coin-change/
 https://leetcode.com/problems/coin-change-2/
+
+
+## Counting permutations
+https://leetcode.com/problems/fibonacci-number/
+https://leetcode.com/problems/climbing-stairs/
+https://leetcode.com/problems/n-th-tribonacci-number/
+https://leetcode.com/problems/domino-and-tromino-tiling/
+https://leetcode.com/problems/unique-paths/
+https://leetcode.com/problems/pascals-triangle/
+https://leetcode.com/problems/unique-paths/
+https://leetcode.com/problems/unique-paths-ii/
+https://leetcode.com/problems/dungeon-game/
+## Optimize permutations
+https://leetcode.com/problems/minimum-path-sum/
+https://leetcode.com/problems/min-cost-climbing-stairs/
+https://leetcode.com/problems/coin-change/
+https://leetcode.com/problems/triangle/
+https://leetcode.com/problems/house-robber/
+https://leetcode.com/problems/house-robber-ii/
+https://leetcode.com/problems/minimum-cost-for-tickets/
 */

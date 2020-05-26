@@ -76,29 +76,32 @@ function helper(node) {
 
 /*  Problems
 BFS::
-https://leetcode.com/problems/binary-tree-level-order-traversal/
- https://leetcode.com/problems/binary-tree-right-side-view
- https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal
- https://leetcode.com/problems/n-ary-tree-level-order-traversal
- https://leetcode.com/problems/binary-tree-level-order-traversal-ii
-
+https://leetcode.com/problems/binary-tree-level-order-traversal/ --- done
+ https://leetcode.com/problems/binary-tree-right-side-view  -- done
+ https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal -- done
+ https://leetcode.com/problems/n-ary-tree-level-order-traversal -- done
+ https://leetcode.com/problems/binary-tree-level-order-traversal-ii -- done
+https://leetcode.com/problems/populating-next-right-pointers-in-each-node/ -- done
 DFS::
- https://leetcode.com/problems/path-sum/
-
+ https://leetcode.com/problems/path-sum/ -- done
+https://leetcode.com/problems/path-sum-ii/ -- done
+ https://leetcode.com/problems/path-sum-iii/ - diffucult
 
 
 */
 
 /*
 # Add into BST
-https://leetcode.com/problems/insert-into-a-binary-search-tree/
+https://leetcode.com/problems/insert-into-a-binary-search-tree/ -- done
+https://leetcode.com/problems/search-in-a-binary-search-tree/ -- done
+https://leetcode.com/problems/closest-binary-search-tree-value/  -- done
 # Get max from BST
-https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+https://leetcode.com/problems/kth-smallest-element-in-a-bst/ -- done
 # Successor 
-https://leetcode.com/problems/inorder-successor-in-bst/
-https://leetcode.com/problems/inorder-successor-in-bst-ii/
+ 285. https://leetcode.com/problems/inorder-successor-in-bst/ -- done
+https://leetcode.com/problems/inorder-successor-in-bst-ii/  -- locked
 # Delete node
-https://leetcode.com/problems/delete-node-in-a-bst/
+https://leetcode.com/problems/delete-node-in-a-bst/ -- done`
 # Traversal
 https://leetcode.com/problems/binary-tree-postorder-traversal/
 https://leetcode.com/problems/n-ary-tree-postorder-traversal/
@@ -144,4 +147,18 @@ https://leetcode.com/problems/construct-binary-search-tree-from-preorder-travers
 https://leetcode.com/problems/middle-of-the-linked-list/
 
 
+
+
+
+Problem Types::  
+----------------
+
+1) BFS with inditialing a Queue and traverse level by level.
+2) BFS without any extra space, 3 pointer approach.(neext extra pointer in node "next")
+3) BFS with BST and non BST traversal with extra space 
+
+
+DFS::
+** it is recursive approach. every time we have call heper for left & right nodes.
+1) Path sum - 112, 113
 */

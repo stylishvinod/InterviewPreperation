@@ -33,9 +33,9 @@ https://leetcode.com/problems/sliding-window-maximum/ -- done
 https://leetcode.com/problems/longest-palindromic-substring/  -- done
 https://leetcode.com/problems/find-all-anagrams-in-a-string/
 Prefix Trie:
-https://leetcode.com/problems/implement-trie-prefix-tree/
-https://leetcode.com/problems/index-pairs-of-a-string/ -- todo
-https://leetcode.com/problems/longest-word-in-dictionary/
+https://leetcode.com/problems/implement-trie-prefix-tree/ -- done
+https://leetcode.com/problems/index-pairs-of-a-string/  -- Locked
+https://leetcode.com/problems/longest-word-in-dictionary/ -- done
 https://leetcode.com/problems/camelcase-matching/
 https://leetcode.com/problems/replace-words/
 https://leetcode.com/problems/implement-magic-dictionary/
