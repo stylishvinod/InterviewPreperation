@@ -1,7 +1,12 @@
 /*
 --sliding window technique 
--- Robin karps
---KMP
+-- Robin karps -- is called rolling hash function. we have to choose a hash function
+    O(nm)
+--KMP -- O(n+m) - we have to prepare a 'pi' or 'lps' table for 'm' then traverse
+ the string 'n'.
+
+ // refer problem 28 to get all 3 examples.
+
 
 Any problem is given related to strings try to think below approach::
 ----------------------------------------------------------------------
@@ -25,7 +30,7 @@ https://leetcode.com/problems/reverse-linked-list/  -- done
 https://leetcode.com/problems/valid-palindrome/  -- done
 https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/ -- done
 https://leetcode.com/problems/count-binary-substrings/ -- done
-https://leetcode.com/problems/repeated-substring-pattern/
+https://leetcode.com/problems/repeated-substring-pattern/ -- done
 https://leetcode.com/problems/implement-strstr/  -- done
 https://leetcode.com/problems/longest-substring-without-repeating-characters/ -- done
 https://leetcode.com/problems/minimum-window-substring/  --  done
@@ -51,4 +56,10 @@ https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/
 https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
 https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 https://leetcode.com/problems/longest-duplicate-substring/
+
+242: https://leetcode.com/problems/valid-anagram/
+300: https://leetcode.com/problems/longest-increasing-subsequence/
+49: https://leetcode.com/problems/group-anagrams/
+65: https://leetcode.com/problems/valid-number/
+525 : https://leetcode.com/problems/contiguous-array/
 */

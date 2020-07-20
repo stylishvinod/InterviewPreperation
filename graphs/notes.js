@@ -99,10 +99,11 @@ Directed Graphs
 # BFS on Directed graphs
 https://leetcode.com/problems/snakes-and-ladders/
 https://leetcode.com/problems/word-ladder/ (extra)
+126 -https://leetcode.com/problems/word-ladder-ii/ -- done
 # DFS on Directed graphs
-https://leetcode.com/problems/course-schedule/
-https://leetcode.com/problems/course-schedule-ii/
-https://leetcode.com/problems/critical-connections-in-a-network/
+https://leetcode.com/problems/course-schedule/  -- Topological sort
+https://leetcode.com/problems/course-schedule-ii/  -- Topoligical sort
+https://leetcode.com/problems/critical-connections-in-a-network/  -- Tarjan's Algoritham
 
 1135
 787
@@ -170,6 +171,17 @@ Spanning Tree:
     if we want to find the destination within minimum hops(edges).
     Bellmanford can solve that issue(DP).
 
+     1) Resting Nodes N-1 times, N is number of vertices or nodes.
+     2) Resting means if(dp[v] > dp[u] + distance) {
+         dp[v] = dp[u] + distance;
+     }
+     3) Normally after few iterations values will not change, we can brak the loop
+     at that time.
+     4) if there is a loop that is having total weight in negative, 
+        bellman for algo fails;
+        so once all N-1 time loop complete we have to check one more time, to check
+        values are not chagned,if they changed then there is no min distance
+        possible.
     Note:
     ----
     1)If we want to compute shortest path from src to des without hops we use

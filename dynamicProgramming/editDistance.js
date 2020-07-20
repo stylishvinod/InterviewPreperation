@@ -37,3 +37,32 @@ var minDistance = function(word1, word2) {
 
    return dist[m][n];
 };
+
+
+// recursive
+
+const minDistanceRecur = (word1, word2, i, j) => {
+    // if both became empty then match
+    if(i === word1.length && j === word2.length) {
+        return 0;
+    }
+    if(i === word1.length) {
+        return word2.length - j;
+    }
+    if(j === word2.length) {
+        return word1.length - i;
+    }
+    // if char match then simply move to next
+    if(word1[i] === word2[j]) {
+        return minDistanceRecur(word1, word2, i+1, j+1);
+    }
+    // if not match then three options
+    // Insert
+    const insert = 1 + minDistanceRecur(word1, word2, i, j+1);
+    // delete char in word1
+    const del = 1 + minDistanceRecur(word1, word2, i+1, j);
+    // replace char
+    const replace = 1 + minDistanceRecur(word1, word2, i+1, j + 1);
+    
+    return Math.min(insert, del, replace);
+}

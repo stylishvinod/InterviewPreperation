@@ -24,11 +24,20 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ -- done
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-II/
     https://leetcode.com/problems/best-time-to-buy-and-sell-stock-III/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-IV/
-
+ 238 : https://leetcode.com/problems/product-of-array-except-self/
 
 LS:: my problems::
 https://leetcode.com/problems/happy-number/ --- done
 https://leetcode.com/problems/find-the-duplicate-number/ -- done
 https://leetcode.com/problems/simplify-path/  --- done
+
+54 : https://leetcode.com/problems/spiral-matrix/
+152: https://leetcode.com/problems/maximum-product-subarray/
+53: https://leetcode.com/problems/maximum-subarray/
+204: https://leetcode.com/problems/count-primes/
+189: https://leetcode.com/problems/rotate-array/
+179: https://leetcode.com/problems/largest-number/
+66 - https://leetcode.com/problems/plus-one/
+398 - https://leetcode.com/problems/random-pick-index/
 
 */

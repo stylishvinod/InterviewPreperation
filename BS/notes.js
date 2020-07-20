@@ -8,7 +8,7 @@ types
 2) solve in duplicates scenario
 3) find in left side only like finding bad version.
 
-https://leetcode.com/problems/first-bad-version/ -- done
+
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ -- done
 https://leetcode.com/problems/search-insert-position/  -- done
 374. https://leetcode.com/problems/guess-number-higher-or-lower/ -- difficult

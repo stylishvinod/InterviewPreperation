@@ -147,9 +147,11 @@ https://leetcode.com/problems/construct-binary-search-tree-from-preorder-travers
 https://leetcode.com/problems/middle-of-the-linked-list/
 
 
-
-
-
+337: https://leetcode.com/problems/house-robber-iii/
+1110 https://leetcode.com/problems/delete-nodes-and-return-forest/
+994 https://leetcode.com/problems/rotting-oranges/
+938 - https://leetcode.com/problems/range-sum-of-bst/
+987-https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
 Problem Types::  
 ----------------
 

@@ -67,4 +67,8 @@ https://leetcode.com/problems/triangle/
 https://leetcode.com/problems/house-robber/
 https://leetcode.com/problems/house-robber-ii/
 https://leetcode.com/problems/minimum-cost-for-tickets/
+
+
+279: https://leetcode.com/problems/perfect-squares/
+1048 https://leetcode.com/problems/longest-string-chain/
 */
