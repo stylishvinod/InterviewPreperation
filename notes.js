@@ -182,5 +182,6 @@ https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-les
 // 525 : https://leetcode.com/problems/contiguous-array/
 
 398 - https://leetcode.com/problems/random-pick-index/
+343 https://leetcode.com/problems/integer-break/
 */
 

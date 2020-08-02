@@ -71,4 +71,5 @@ https://leetcode.com/problems/minimum-cost-for-tickets/
 
 279: https://leetcode.com/problems/perfect-squares/
 1048 https://leetcode.com/problems/longest-string-chain/
+343 https://leetcode.com/problems/integer-break/
 */
