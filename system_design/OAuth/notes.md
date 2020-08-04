@@ -1,5 +1,5 @@
 # OAuth
-![](assets/oAuth2Ex.png)
+![](assets/oAuth2EX.png)
 ![](assets/oAuth_pur.png)
 ![](assets/oAuth_pur2.png)
 oAuth is created for Authentication purpose
