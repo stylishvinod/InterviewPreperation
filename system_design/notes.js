@@ -11,4 +11,10 @@
 
 1) Map Reduce
 
+
+Topics to learn
+
+1) Elastic search
+2) Docker
+
 */
