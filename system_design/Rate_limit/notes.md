@@ -9,7 +9,11 @@ Rate Limiting is an important concept in designing systems. Rate limiting enable
 -  concurrent - How many parallel users are allowed
 -  location/ID - in case of anu event in any location, we can rate limit in other locations
 
+## single server solution
+![](assets/RL7.png)
 
+## communication b/w servers in distributed word
+![](assets/RL8.png)
 
 ##  Different Algorithms
 - Token Bucket
@@ -74,4 +78,8 @@ Local memory + sync service
 
  https://www.youtube.com/watch?v=mhUQe4BKZXs&t=3s
 
+https://www.youtube.com/watch?v=FU4WlwfS3G0
+
  https://konghq.com/blog/how-to-design-a-scalable-rate-limiting-algorithm/#:~:text=Sliding%20Log%20rate%20limiting%20involves,to%20determine%20the%20request%20rate.
+
+ https://medium.com/@guptaabhinav206/system-design-distributed-rate-limiting-ef7c0650f0e5#:~:text=Rate%20Limiting%20is%20an%20important,can%20have%20on%20a%20server.&text=Hence%2C%20each%20of%20the%20four,will%20serve%20100%20requests%20each.
