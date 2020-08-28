@@ -1,4 +1,9 @@
 /*
+
+Follow this before start
+https://github.com/jwasham/coding-interview-university
+
+
 //  Docs in google drive
 ------------------------
 
@@ -16,6 +21,8 @@ https://github.com/dilipkumar2k6
 // https://www.educative.io/courses/grokking-the-system-design-interview
 // https://content.creddle.io/ -- for resume
 
+//Amazon LP
+//https://medium.com/@scarletinked/are-you-the-leader-were-looking-for-interviewing-at-amazon-8301d787815d
 /*
 Types of search Algorithams
 ----------------------------

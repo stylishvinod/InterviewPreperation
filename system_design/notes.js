@@ -17,4 +17,8 @@ Topics to learn
 1) Elastic search
 2) Docker
 
+
+
+Question: 8/23/20
+1) How count min sketch calculates the top-k
 */
