@@ -197,6 +197,7 @@ what are the things we have to backup
 
 # References:
 
-https://www.youtube.com/watch?v=EU81tjgoKoI&t=1358s
+Frontend: https://www.youtube.com/watch?v=EU81tjgoKoI&t=1358s
+backend: https://www.youtube.com/watch?v=K3Z1PY2vr3Q
 
 https://www.youtube.com/watch?v=BxQAqADGY_k
