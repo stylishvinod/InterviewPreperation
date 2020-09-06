@@ -10,6 +10,11 @@ https://github.com/jwasham/coding-interview-university
 https://drive.google.com/open?id=1fL0MUYTwt9rm9gDZ1_YGUKMaCQ7VrF8h
 https://drive.google.com/drive/folders/1QAJ5tQCMEFsR4mSw_v6HeaFyOdHsT-9f
 
+new account details for recordings
+
+dilip.kumar2k2021@gmail.com
+India@_123
+
 https://github.com/dilipkumar2k6
 */
 // MS online assessment::
