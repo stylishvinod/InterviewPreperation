@@ -1,29 +1,39 @@
 //radixSor
 
 
-function radixSort(arr) {
-    const digits = getTotalDigits(arr);
-    for(let i=0;i < digits;i++){
-        let buckets = Array.from({length:10},()=>[ ]);
-         
-         for (let j = 0; j < arr.length; j++) {
-            buckets[getDigit(arr[ j ], i)].push(arr[ j ]);
-          }
-          arr = [].concat(...buckets);
-      }
-      return arr;
-}
-
-function getDigit(num, pos) {
-    return  Math.floor((num / Math.pow(10, pos - 1)) % 10);
-}
-
-function getTotalDigits(arr) {
-    let count = 0;
-    for (let num of arr) {
-        if (count < num.toString().length) {
-            count = num.toString().length
-        }
+function radixSort(nums) {
+    //get max digits in a num of nums
+    
+    let maxDigits = 0;
+    for(let i = 0 ; i < nums.length; i++) {
+     maxDigits = Math.max(maxDigits, nums[i].toString().length);   
     }
-    return count
+    
+    //for each digit sort the numbers 
+    for(let i = 0 ;i < maxDigits; i++ ) {
+    
+        let tmpArry = new Array(10).fill(0).map(a => []);
+        
+        for(let j = 0 ; j < nums.length; j++) {
+            let numDigit = getDigitOfNumber(nums[j], i);
+            tmpArry[numDigit].push(nums[j]);
+        }
+        
+        // update original nums array with intermediate sort result
+        let pos = 0;
+        for(let i = 0 ; i< tmpArry.length; i++) {
+            let numCount =  tmpArry[i];
+            for(let j =0; j< numCount.length; j++) {
+                nums[pos++] = numCount[j];
+            }
+        }
+         
+    }
+    
+    return nums;
+}
+    
+function getDigitOfNumber(num, pos) {
+    return   Math.floor(num / Math.pow(10, pos)) % 10;
+    
 }
