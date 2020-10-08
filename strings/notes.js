@@ -62,4 +62,6 @@ https://leetcode.com/problems/longest-duplicate-substring/
 49: https://leetcode.com/problems/group-anagrams/
 65: https://leetcode.com/problems/valid-number/
 525 : https://leetcode.com/problems/contiguous-array/
+686: https://leetcode.com/problems/repeated-string-match/
+1410: https://leetcode.com/problems/html-entity-parser/
 */
