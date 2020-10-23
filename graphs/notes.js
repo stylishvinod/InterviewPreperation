@@ -104,7 +104,7 @@ https://leetcode.com/problems/word-ladder/ (extra)
 https://leetcode.com/problems/course-schedule/  -- Topological sort
 https://leetcode.com/problems/course-schedule-ii/  -- Topoligical sort
 https://leetcode.com/problems/critical-connections-in-a-network/  -- Tarjan's Algoritham
-
+https://leetcode.com/problems/course-schedule-iii/
 1135
 787
 743
@@ -125,7 +125,7 @@ https://leetcode.com/problems/number-of-connected-components-in-an-undirected-gr
 https://leetcode.com/problems/redundant-connection/  -- done
 https://leetcode.com/problems/regions-cut-by-slashes/
 https://leetcode.com/problems/evaluate-division/
-https://leetcode.com/problems/connecting-cities-with-minimum-cost/  -- done
+1135: https://leetcode.com/problems/connecting-cities-with-minimum-cost/  -- done
 https://leetcode.com/problems/cheapest-flights-within-k-stops/ -- done
 https://leetcode.com/problems/network-delay-time/
 
@@ -166,6 +166,8 @@ Spanning Tree:
     
     Bellman-Ford Algorthim:
     ----------------------
+    https://www.youtube.com/watch?v=FtN3BYH2Zes
+
     It is enhancement to Dijkstra's algorithm, where Dijkstra's algorthim only
     able to find the min path between source and destination. It can't handle
     if we want to find the destination within minimum hops(edges).
@@ -182,6 +184,8 @@ Spanning Tree:
         so once all N-1 time loop complete we have to check one more time, to check
         values are not chagned,if they changed then there is no min distance
         possible.
+    5) This Algorithm fails if there is a negative valued cycle present in graph
+    
     Note:
     ----
     1)If we want to compute shortest path from src to des without hops we use

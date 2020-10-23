@@ -46,3 +46,29 @@ const searchRoot = (parent, node) => {
     return root;
     
 }
+
+// approach: 2 DP
+
+/**
+ * @param {number} N
+ * @param {number[][]} connections
+ * @return {number}
+ */
+var minimumCost = function(N, connections) {
+    let dp = new Array(N+1).fill(Number.MAX_SAFE_INTEGER);
+    dp[1] = 0;
+    
+    for(let i =0; i < N-1; i++) {
+        for(let [u, v, w ] of connections) {
+            console.log({dp})
+            if(dp[v] > dp[u] + w) {
+                dp[v] = dp[u] + w;
+            } 
+        }
+    }
+    console.log({dp})
+    dp.shift();
+    let res = Math.max(...dp);
+    
+    return res === Number.MAX_SAFE_INTEGER ? -1 : res;
+};

@@ -3,6 +3,7 @@
 Follow this before start
 https://github.com/jwasham/coding-interview-university
 
+https://cses.fi/book/book.pdf
 
 //  Docs in google drive
 ------------------------
@@ -15,6 +16,14 @@ new account details for recordings
 
 dilip.kumar2k2021@gmail.com
 India@_123
+
+https://oj.interviewkickstart.com
+
+Email: dilip.kumar2k2019@gmail.com
+Password: India@_123
+
+Different pattern algorithms
+https://www.educative.io/courses/grokking-the-coding-interview/3YVYvogqXpA
 
 https://github.com/dilipkumar2k6
 https://github.com/dilipkumar2k6/sorting-algorithm/blob/master/bucket-sort/bucket-sort-using-radix-sort.js
@@ -197,5 +206,7 @@ https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-les
 
 398 - https://leetcode.com/problems/random-pick-index/
 343 https://leetcode.com/problems/integer-break/
+
+https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 */
 
