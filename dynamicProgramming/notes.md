@@ -1,6 +1,15 @@
 
 /*
 
+Types of DP:(refer below link)
+https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+
+https://leetcode.com/list/55ac4kuc - (Min - max path to target)
+https://leetcode.com/list/55ajm50i - (distinct ways)
+https://leetcode.com/list/55aj8s16 - (merging intervals)
+https://leetcode.com/list/55afh7m7 - (DP on strings)
+https://leetcode.com/list/55af7bu7 - (decision making)
+
  -- >DP means recursion without repetetion.
 
 ****  Top down memoization
@@ -50,11 +59,9 @@ https://leetcode.com/problems/coin-change-2/
 
 
 ## Counting permutations
-https://leetcode.com/problems/fibonacci-number/
 https://leetcode.com/problems/climbing-stairs/
 https://leetcode.com/problems/n-th-tribonacci-number/
 https://leetcode.com/problems/domino-and-tromino-tiling/
-https://leetcode.com/problems/unique-paths/
 https://leetcode.com/problems/pascals-triangle/
 https://leetcode.com/problems/unique-paths/
 https://leetcode.com/problems/unique-paths-ii/
@@ -62,14 +69,19 @@ https://leetcode.com/problems/dungeon-game/
 ## Optimize permutations
 https://leetcode.com/problems/minimum-path-sum/
 https://leetcode.com/problems/min-cost-climbing-stairs/
-https://leetcode.com/problems/coin-change/
 https://leetcode.com/problems/triangle/
-https://leetcode.com/problems/house-robber/
-https://leetcode.com/problems/house-robber-ii/
 https://leetcode.com/problems/minimum-cost-for-tickets/
 
 
 279: https://leetcode.com/problems/perfect-squares/
 1048 https://leetcode.com/problems/longest-string-chain/
 343 https://leetcode.com/problems/integer-break/
-*/
+221: https://leetcode.com/problems/maximal-square/
+1143: https://leetcode.com/problems/longest-common-subsequence/
+
+https://leetcode.com/problems/shortest-common-supersequence/
+1155: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
+![](assets/1155.png)
+
+https://leetcode.com/problems/interleaving-string/
+https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RM1BDv71V60
