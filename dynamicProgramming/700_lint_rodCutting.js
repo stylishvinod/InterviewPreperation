@@ -15,3 +15,23 @@ const cutting = function (prices, n) {
     }
     return dp[prices.length][n]
 }
+
+
+// Method:: 2
+const cutting = function (prices, n) {
+    
+    const dp = new Array(n+1).fill(0);
+    
+    
+    for(let i = 1 ; i<= n; i++) {
+        for(let j = 0; j < prices.length; j++) {
+            if(i >= (j+1)) {
+                dp[i] = Math.max(dp[i], dp[i-(j+1)]+prices[j])
+            } else { 
+                break;
+            }
+        }
+    }
+    console.log({dp})
+    return dp[n]
+}

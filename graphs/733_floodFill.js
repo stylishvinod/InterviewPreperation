@@ -58,3 +58,44 @@ const getNeighbors = (grid, [i,j], initalValue) => {
     }
     return neighbors;
 }
+
+// approach: 2
+
+/**
+ * @param {number[][]} image
+ * @param {number} sr
+ * @param {number} sc
+ * @param {number} newColor
+ * @return {number[][]}
+ */
+const adjList = [[0,-1], [0, 1], [1,0], [-1,0]];
+
+var floodFill = function(image, sr, sc, newColor) {
+    return dfs(image, sr, sc, image[sr][sc], newColor)
+};
+
+const dfs = (grid, i, j, initialColor, newColor) => {
+    if(initialColor === newColor) return grid;
+    
+    grid[i][j] = newColor;
+    const neighours = getNeighbours(grid, i, j, initialColor);
+    for(let [x,y] of neighours) {
+        if(grid[x][y] === initialColor) {
+            dfs(grid, x, y, initialColor, newColor);
+        }
+    }
+    return grid;
+}
+
+const getNeighbours = (grid, i, j, initialColor) => {
+    const result = [];
+    const row = grid.length;
+    const col = grid[0].length;
+    
+    for(let [x,y] of adjList) {
+        if(x+i >=0 && x+i < row && j+y >=0 && j+y < col && grid[x+i][y+j] === initialColor ) {
+            result.push([x+i, y+j])
+        }
+    }
+    return result;
+}

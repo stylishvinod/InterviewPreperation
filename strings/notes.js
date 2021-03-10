@@ -65,3 +65,36 @@ https://leetcode.com/problems/longest-duplicate-substring/
 686: https://leetcode.com/problems/repeated-string-match/
 1410: https://leetcode.com/problems/html-entity-parser/
 */
+
+
+
+
+/*
+https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/
+-> Finad total count of substrings in a given string
+
+
+
+TODO::
+https://leetcode.com/problems/valid-palindrome-iii
+
+
+
+3/6/2021
+
+https://leetcode.com/problems/distinct-subsequences/
+https://leetcode.com/problems/number-of-matching-subsequences/
+https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/
+https://leetcode.com/problems/wiggle-subsequence/
+
+3/7/21
+https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/longest-palindromic-subsequence/
+https://leetcode.com/problems/palindromic-substrings/
+
+3/9/21
+https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+https://leetcode.com/problems/rotate-string/
+https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/
+
+*/

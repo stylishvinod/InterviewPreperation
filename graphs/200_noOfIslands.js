@@ -75,3 +75,50 @@ const outerLoop = grid => {
 var numIslands = function(grid) {
     return outerLoop(grid);
 };
+
+
+/// approach 2:
+
+/**
+ * @param {character[][]} grid
+ * @return {number}
+ */
+
+const adjList = [[0,-1], [0, 1], [1,0], [-1,0]];
+
+var numIslands = function(grid) {
+    const m = grid.length;
+    const n = grid[0].length;
+    let connected = 0;
+    for(let i = 0 ; i <m; i++) {
+        for(let j=0; j < n; j++) {
+            if(grid[i][j] === '1') {
+                connected++
+                dfs(grid, i , j)
+            }
+        }
+    }
+    return connected;
+};
+
+const dfs = (grid, i, j) => {
+    grid[i][j] = 0;
+    
+    const neighours = getNeighbours(grid, i, j);
+    for(let [x,y] of neighours) {
+        dfs(grid, x, y);
+    }
+}
+
+const getNeighbours = (grid, i, j) => {
+    const result = [];
+    const row = grid.length;
+    const col = grid[0].length;
+    
+    for(let [x,y] of adjList) {
+        if(x+i >=0 && x+i < row && j+y >=0 && j+y < col && grid[x+i][y+j] === '1' ) {
+            result.push([x+i, y+j])
+        }
+    }
+    return result;
+}

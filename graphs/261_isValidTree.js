@@ -1,68 +1,81 @@
+
 /**
  * @param {number} n
  * @param {number[][]} edges
  * @return {boolean}
  */
-
-function buidGraph(n,edges) {
-    let vert = [];
-    
-    for(let i=0; i<n; i++) {
-        vert[i] = [];
-    }
-    
-    edges.forEach(edge => {
-        vert[edge[0]].push(edge[1]);
-        vert[edge[1]].push(edge[0]);
-        
-    })
-    
-    return vert;
-}
-
-function bfs(graph, visited, start, parent) {
-    let q = [start];
-    visited[start] = 1;
-    parent[start] = null;
-    while(q.length) {
-        let node = q.shift();     
-        let adj = graph[node];
-        for(const neigh of adj) {
-            if(!visited[neigh]) {
-                q.push(neigh);
-                visited[neigh] = 1;
-                parent[neigh] = node;
-            } else {
-                if(parent[node] !== neigh) {
-                    return true
-                } 
-            }
-        }
-    }
-    return false;
-}
-
 var validTree = function(n, edges) {
-      let graph = buidGraph(n, edges);
-    console.log(graph);
-    let visited = new Array(n).fill(0);
-    let parent = new Array(n).fill(null);
-    
+    const graph = buildGraph(n, edges);
     let connected = 0;
-    for(let i =0 ; i <n; i++) {
-        
-        if(!visited[i]) {        
+    const visited = new Array(n).fill(0);
+    const parent = new Array(n).fill(null);
+    
+    for(let i = 0 ; i <n; i++) {
+        if(!visited[i]) {
             connected++;
             if(connected > 1) {
                 return false;
             }
-            console.log("vinod connected", connected, );
-    if(bfs(graph, visited,i, parent)) {
-        return false;
-    }
+            
+            if(!dfs(graph, i, visited, parent)) {
+                return false
+            }
         }
-    };
+    }
     
-   //  console.log("vinod comp", connected)
     return true;
 };
+
+const dfs = (graph, node, visited, parent) => {
+    visited[node] = 1;
+    
+    for(let nei of graph[node]) {
+        if(!visited[nei]) {
+            parent[nei] = node;
+            if(!dfs(graph, nei, visited, parent)) {
+                return false
+            }
+        } else {
+            if(parent[node] !== nei) {
+                return false;
+            }
+        }
+    }
+    
+    return true;
+}
+
+const bfs = (graph, head, visited, parent) => {
+    const qu = [head];
+    parent[head] = null;
+    visited[head] = 1;
+    
+    while(qu.length) {
+        let node = qu.shift();
+        for(let nei of graph[node]) {
+            if(!visited[nei]) {
+                visited[nei] = 1;
+                parent[nei] = node;
+                qu.push(nei)
+            } else {
+                if(parent[node] !== nei) {
+                    console.log({parent, node, nei})
+                    return false
+                }
+            }
+        }
+    }
+    return true;
+}
+
+
+const buildGraph = (n, edges) => {
+    const arr = new Array(n).fill(0).map(a => []);
+    
+    for(let [a,b] of edges) {
+        arr[a].push(b);
+        arr[b].push(a)
+    }
+    console.log({arr})
+    return arr;
+}

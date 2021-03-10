@@ -1,6 +1,48 @@
 
 //https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
+
+var findAnagrams = function(s, p) {
+    const map = new Map();
+    for (const chr of p) {
+        map.set(chr, map.has(chr) ? map.get(chr) + 1: 1);
+    }
+    const m = s.length;
+    const n = p.length;
+    const ans = [];
+    let total = map.size;
+    
+    // apply fix sliding window concept
+    for (let j = 0; j < m; j++) {
+        const chr = s[j];
+        if(map.has(chr)) {
+            map.set(chr, map.get(chr) - 1);
+            if(map.get(chr) === 0) {
+                total--;                
+            }
+        }
+        // check for ans range and slide window
+        if(j + 1 - n >= 0) {
+            // check if ans is found
+            if(total === 0) {
+                ans.push(j + 1 - n);
+            }
+            // reduce window size by 1 for next slide
+            const lastChr = s[j + 1 - n];
+            if(map.has(lastChr)) {
+                map.set(lastChr, map.get(lastChr) + 1);
+                if(map.get(lastChr) === 1) {
+                    total++;                    
+                }
+            }
+        }
+    }
+    return ans;
+};
+
+
+//approach:2
+
 var findAnagrams = function(s, p) {
     if(s.length < p.length) return [];
     
